@@ -11,8 +11,8 @@
 
 <% @edges.each do |edge| %>
   <tr>
-    <td><%= edge.source_id %></td>
-    <td><%= edge.sink_id %></td>
+    <td><%= edge.source_name %></td>
+    <td><%= edge.sink_name %></td>
     <td><%= link_to 'Show', edge %></td>
     <td><%= link_to 'Edit', edit_edge_path(edge) %></td>
     <td><%= link_to 'Destroy', edge, :confirm => 'Are you sure?', :method => :delete %></td>
