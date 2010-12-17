@@ -1,4 +1,8 @@
 Digraph::Application.routes.draw do
+  resources :nodes
+
+  resources :edges
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

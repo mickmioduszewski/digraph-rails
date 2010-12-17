@@ -1,0 +1,25 @@
+<%= form_for(@edge) do |f| %>
+  <% if @edge.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@edge.errors.count, "error") %> prohibited this edge from being saved:</h2>
+
+      <ul>
+      <% @edge.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :source_id %><br />
+    <%= f.text_field :source_id %>
+  </div>
+  <div class="field">
+    <%= f.label :sink_id %><br />
+    <%= f.text_field :sink_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
