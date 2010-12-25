@@ -13,7 +13,15 @@
     <td><%= node.name %></td>
     <td><%= link_to 'Show', node %></td>
     <td><%= link_to 'Edit', edit_node_path(node) %></td>
-    <td><%= link_to 'Destroy', node, :confirm => 'Are you sure?', :method => :delete %></td>
+    <% if node.sinks.empty?%>
+      <td><%= link_to 'Destroy', node, :confirm => 'Are you sure?', :method => :delete %></td>
+    <% else %>
+    <td>
+    <% node.sinks.each do |sink|  %>
+      <%= link_to sink.name, sink %>
+    <% end %>
+    </td>
+    <%end%>
   </tr>
 <% end %>
 </table>
