@@ -2,10 +2,12 @@ class NodesController < ApplicationController
   # GET /nodes
   # GET /nodes.xml
   def index
-    @nodes = Node.all
+#    @nodes = Node.all
+    @nodes = Node.where("name LIKE ?", "%#{params[:term]}%")
 
     respond_to do |format|
       format.html # index.html.erb
+      format.json { render :json => @nodes.to_json }
       format.xml  { render :xml => @nodes }
     end
   end

@@ -2,9 +2,73 @@
 <html>
 <head>
   <title>Digraph</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
+
+  <%= stylesheet_link_tag 'ui-lightness/jquery-ui-1.8.7.custom' %>
+    <%= stylesheet_link_tag 'scaffold' %>
+  <%= javascript_include_tag 'jquery-1.4.4.min', 'jquery-ui-1.8.7.custom.min' %>
+  <meta charset="utf-8"
+
+  <script>
+  
+  $(function() {
+		$( "#edge_source_name" ).autocomplete({
+			source: function( request, response ) {
+				$.ajax({
+					url: "http://localhost:3000/nodes.json",
+					dataType: "json",
+					data: {						
+						term: request.term
+					},
+					success: function( data ) {
+						response( $.map( data, function( item ) {
+							return {
+								label: item.node.name + " " + item.node.id,
+								value: item.node.name
+							}
+						}));
+					}
+				});
+			},
+			open: function() {
+				$( this ).removeClass( "ui-corner-all" ).addClass( "ui-corner-top" );
+			},
+			close: function() {
+				$( this ).removeClass( "ui-corner-top" ).addClass( "ui-corner-all" );
+			}
+		});
+	});
+	
+	
+	$(function() {
+		$( "#edge_sink_name" ).autocomplete({
+			source: function( request, response ) {
+				$.ajax({
+					url: "http://localhost:3000/nodes.json",
+					dataType: "json",
+					data: {						
+						term: request.term
+					},
+					success: function( data ) {
+						response( $.map( data, function( item ) {
+							return {
+								label: item.node.name + " " + item.node.id,
+								value: item.node.name
+							}
+						}));
+					}
+				});
+			},
+			open: function() {
+				$( this ).removeClass( "ui-corner-all" ).addClass( "ui-corner-top" );
+			},
+			close: function() {
+				$( this ).removeClass( "ui-corner-top" ).addClass( "ui-corner-all" );
+			}
+		});
+	});
+	</script>
+  
+  
 </head>
 <body>
 
