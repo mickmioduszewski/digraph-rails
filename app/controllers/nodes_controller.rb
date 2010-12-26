@@ -3,7 +3,7 @@ class NodesController < ApplicationController
   # GET /nodes.xml
   def index
 #    @nodes = Node.all
-    @nodes = Node.where("name LIKE ?", "%#{params[:term]}%")
+    @nodes = Node.search(params[:term]).paginate(:per_page => 10, :page => params[:page])
 
     respond_to do |format|
       format.html # index.html.erb

@@ -1,5 +1,13 @@
 <h1>Listing nodes</h1>
 
+<%= form_tag nodes_path, :method => 'get' do %>
+  <p>
+    <%= text_field_tag :term, params[:term] %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+<% end %>
+
+
 <table>
   <tr>
     <th>Name</th>
@@ -25,7 +33,7 @@
   </tr>
 <% end %>
 </table>
-
+<%= will_paginate @nodes%>
 <br />
 
 <%= link_to 'New Node', new_node_path %>

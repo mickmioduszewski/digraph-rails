@@ -18,4 +18,7 @@ class Edge < ActiveRecord::Base
     self.sink = Node.find_or_create_by_name(name) unless name.blank?
   end 
   
+  validates_presence_of :source_id
+  validates_presence_of :sink_id
+  
 end
