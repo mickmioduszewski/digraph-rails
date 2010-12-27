@@ -10,13 +10,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101217124346) do
+ActiveRecord::Schema.define(:version => 20101227001338) do
+
+  create_table "edge_types", :force => true do |t|
+    t.string   "name"
+    t.string   "source_type"
+    t.string   "sink_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "edges", :force => true do |t|
     t.integer  "source_id"
     t.integer  "sink_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "edge_type_id"
   end
 
   create_table "nodes", :force => true do |t|

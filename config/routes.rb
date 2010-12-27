@@ -1,4 +1,6 @@
 Digraph::Application.routes.draw do
+  resources :edge_types
+
   resources :nodes
 
   resources :edges

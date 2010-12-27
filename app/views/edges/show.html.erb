@@ -9,7 +9,10 @@
   <b>Sink:</b>
   <%= @edge.sink_name %>
 </p>
-
+<p>
+  <b>Edge type:</b>
+  <%= @edge.edge_type.name %>
+</p>
 
 <%= link_to 'Edit', edit_edge_path(@edge) %> |
 <%= link_to 'Back', edges_path %>
