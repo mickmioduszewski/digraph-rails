@@ -5,6 +5,46 @@
   <%= @node.name %>
 </p>
 
+<p>
+<%if @node.edges_as_sink.empty?-%>
+  <b>No context</b>
+<%else%>
+  <b>Context:</b>
+  <ul>
+    <% @node.edges_as_sink.each do |edge|  %>
+      <li>  <%=link_to edge.source.name, edge.source%> (<%=edge.edge_type.name%>)  <%=edge.sink.name%></li>
+    <%end%>
+  </ul>  
+<%end%>
+</p>
+
+<p>
+<%if @node.edges_as_source.empty?-%>
+  <b>No decomposition</b>
+<%else%>
+  <b>Decomposition:</b>
+  <ul>
+    <% @node.edges_as_source.each do |edge|  %>
+      <li> <%=edge.source.name%> (<%= edge.edge_type.name%> )  <%=link_to edge.sink.name, edge.sink %></li>
+      <%if !edge.sink.edges_as_source.empty?%>
+        <ul>
+        <% edge.sink.edges_as_source.each do |edge|  %>
+          <li> <%=edge.source.name%> (<%= edge.edge_type.name%> )  <%=link_to edge.sink.name, edge.sink %></li>         
+            <%if !edge.sink.edges_as_source.empty?%>
+              <ul>
+                <% edge.sink.edges_as_source.each do |edge|  %>
+                  <li> <%=edge.source.name%> (<%= edge.edge_type.name%> )  <%=link_to edge.sink.name, edge.sink %></li>
+                <%end%>
+              </ul>
+            <%end%>         
+        <%end%>
+        </ul>
+      <%end%>      
+    <%end%>
+  </ul>
+<%end%>
+</p
 
 <%= link_to 'Edit', edit_node_path(@node) %> |
 <%= link_to 'Back', nodes_path %>
+
