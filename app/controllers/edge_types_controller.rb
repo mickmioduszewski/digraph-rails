@@ -2,7 +2,7 @@ class EdgeTypesController < ApplicationController
   # GET /edge_types
   # GET /edge_types.xml
   def index
-    @edge_types = EdgeType.all
+    @edge_types = EdgeType.order('name').all
 
     respond_to do |format|
       format.html # index.html.erb
