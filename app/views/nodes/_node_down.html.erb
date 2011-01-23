@@ -1,0 +1,13 @@
+<%if !node_down.edges_as_source.empty?%>
+  <% node_down.edges_as_source.each do |edge|  %>
+    <%if !@edges_array.include?(edge)%>      
+      <%@edges_array[@j] = edge%>
+      <%@j=@j+1%>
+      <%if !@nodes_array.include?(edge.sink)%>
+        <%@i=@i+1%>
+        <%@nodes_array[@i] = edge.sink%>
+        <%= render :partial => "node_down", :object => edge.sink %>
+      <%end%>
+    <%end%>
+  <%end%>
+<%end%>

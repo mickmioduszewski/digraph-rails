@@ -1,0 +1,5 @@
+digraph G { 
+edge [color="#666666", arrowhead="open", fontname="Trebuchet MS", fontsize="11"] 
+node [color="#757116", style=filled, shape=box, fontname="Trebuchet MS", fontcolor="White"]
+n8 [URL="/nodes/8",  label="Jacinta", style=filled fillcolor="#00477f"]
+  }
