@@ -16,7 +16,7 @@
 		$( "#edge_source_name" ).autocomplete({
 			source: function( request, response ) {
 				$.ajax({
-					url: "http://localhost:3000/nodes.json",
+					url: "http://digraph.dev/nodes.json",
 					dataType: "json",
 					data: {						
 						term: request.term
@@ -24,7 +24,7 @@
 					success: function( data ) {
 						response( $.map( data, function( item ) {
 							return {
-								label: item.node.name + " " + item.node.id,
+								label: item.node.name + " (" + item.node.id + ")",
 								value: item.node.name
 							}
 						}));
@@ -45,7 +45,7 @@
 		$( "#edge_sink_name" ).autocomplete({
 			source: function( request, response ) {
 				$.ajax({
-					url: "http://localhost:3000/nodes.json",
+					url: "http://digraph.dev/nodes.json",
 					dataType: "json",
 					data: {						
 						term: request.term
@@ -53,7 +53,7 @@
 					success: function( data ) {
 						response( $.map( data, function( item ) {
 							return {
-								label: item.node.name + " " + item.node.id,
+								label: item.node.name + " (" + item.node.id + ")",
 								value: item.node.name
 							}
 						}));

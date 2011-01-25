@@ -1,5 +1,15 @@
 digraph G { 
 edge [color="#666666", arrowhead="open", fontname="Trebuchet MS", fontsize="11"] 
 node [color="#757116", style=filled, shape=box, fontname="Trebuchet MS", fontcolor="White"]
-n8 [URL="/nodes/8",  label="Jacinta", style=filled fillcolor="#00477f"]
+n2 [URL="/nodes/2",  label="node2", style=filled fillcolor="#00477f"]
+n1 [URL="/nodes/1",  label="node1"]
+n3 [URL="/nodes/3",  label="node3"]
+n4 [URL="/nodes/4",  label="node4"]
+n5 [URL="/nodes/5",  label="node5"]
+n13 [URL="/nodes/13",  label="node 55"]
+n1 -> n2 [label="Objective -> Strategy"]
+n2 -> n3 [label="Parent -> Child"]
+n3 -> n4 [label="Parent -> Child"]
+n4 -> n5 [label="Parent -> Child"]
+n4 -> n13 [label="Parent -> Child"]
   }
