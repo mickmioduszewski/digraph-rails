@@ -16,7 +16,7 @@ class NodesController < ApplicationController
   # GET /nodes/1.xml
   def show
     @node = Node.find(params[:id])
-
+#    @edge = Edge.new
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @node }

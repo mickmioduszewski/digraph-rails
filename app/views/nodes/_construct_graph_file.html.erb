@@ -9,7 +9,7 @@
   <%@filetext << "]\n"%>  
 <%end%>
 <%@edges_array.each do |edge|%>
-  <%@filetext << "n#{edge.source_id} -> n#{edge.sink_id} [label=\"#{edge.edge_type.name}\"]\n"%>
+  <%@filetext << "n#{edge.source_id} -> n#{edge.sink_id} [URL=\"/edges/#{edge.id}\",  label=\"#{edge.edge_type.name}\"]\n"%>
 <%end%>
 <%@filetext << "  }"%>
 <%my_file = File.new("public/mickdot.dot","w")%>
