@@ -1,0 +1,17 @@
+<%@filetext = "digraph G { \n"%>
+<%@filetext << "edge [color=\"#666666\", arrowhead=\"open\", fontname=\"Trebuchet MS\", fontsize=\"11\"] \n"%>
+<%@filetext << "node [color=\"#757116\", style=filled, shape=box, fontname=\"Trebuchet MS\", fontcolor=\"White\"]\n"%>
+<%@nodes_array.each do |node|%>
+  <%@filetext << "n#{node.id} [URL=\"/nodes/#{node.id}\",  label=\"#{node.name}\""%>
+  <%if node == @node%>
+    <%@filetext << ", style=filled fillcolor=\"#00477f\""%>
+  <%end%>
+  <%@filetext << "]\n"%>  
+<%end%>
+<%@edges_array.each do |edge|%>
+  <%@filetext << "n#{edge.source_id} -> n#{edge.sink_id} [label=\"#{edge.edge_type.name}\"]\n"%>
+<%end%>
+<%@filetext << "  }"%>
+<%my_file = File.new("public/mickdot.dot","w")%>
+<%my_file.write @filetext%>
+<%my_file.close%>
