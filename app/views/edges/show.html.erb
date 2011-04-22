@@ -14,5 +14,7 @@
   <%= @edge.edge_type.name %>
 </p>
 
+<%= render :partial => "nodes/paint_graph" %>
+
 <%= link_to 'Edit', edit_edge_path(@edge) %> |
 <%= link_to 'Back', edges_path %>

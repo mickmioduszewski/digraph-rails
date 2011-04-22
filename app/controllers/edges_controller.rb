@@ -14,7 +14,8 @@ class EdgesController < ApplicationController
   # GET /edges/1.xml
   def show
     @edge = Edge.find(params[:id])
-
+    @node = @edge.source
+    
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @edge }

@@ -6,7 +6,7 @@
       <%if !@nodes_array.include?(edge.source)%>
         <%@i=@i+1%>
         <%@nodes_array[@i] = edge.source%>
-        <%= render :partial => "collect_node_up", :object => edge.source %>
+        <%= render :partial => "nodes/collect_node_up", :object => edge.source %>
       <%end%>
     <%end%>
   <%end%>

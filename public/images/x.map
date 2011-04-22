@@ -1,27 +1,17 @@
 <map id="G" name="G">
-<area shape="rect" id="node1" href="/nodes/3" title="node3" alt="" coords="71,235,143,283"/>
-<area shape="rect" id="node4" href="/nodes/4" title="node4" alt="" coords="71,349,143,397"/>
-<area shape="poly" id="edge12" href="/edges/6" title="Parent &#45;&gt; Child" alt="" coords="109,283 109,335 104,335 104,283"/>
-<area shape="rect" id="edge12" href="/edges/6" title="Parent &#45;&gt; Child" alt="" coords="107,307,208,325"/>
-<area shape="rect" id="node2" href="/nodes/2" title="node2" alt="" coords="181,120,253,168"/>
-<area shape="poly" id="edge2" href="/edges/2" title="Parent &#45;&gt; Child" alt="" coords="196,170 141,227 137,223 192,166"/>
-<area shape="rect" id="edge2" href="/edges/2" title="Parent &#45;&gt; Child" alt="" coords="168,192,269,211"/>
-<area shape="rect" id="node3" href="/nodes/1" title="node1" alt="" coords="71,5,143,53"/>
-<area shape="poly" id="edge10" href="/edges/5" title="Parent &#45;&gt; Child" alt="" coords="96,55 81,85 71,121 67,144 71,167 90,221 85,223 65,169 62,144 65,119 76,84 91,52"/>
-<area shape="rect" id="edge10" href="/edges/5" title="Parent &#45;&gt; Child" alt="" coords="68,135,169,153"/>
-<area shape="poly" id="edge4" href="/edges/1" title="Objective &#45;&gt; Strategy" alt="" coords="132,52 187,108 183,112 128,56"/>
-<area shape="rect" id="edge4" href="/edges/1" title="Objective &#45;&gt; Strategy" alt="" coords="168,77,313,96"/>
-<area shape="poly" id="edge6" href="/edges/9" title="Parent &#45;&gt; Child" alt="" coords="143,21 161,23 169,29 158,36 156,31 164,29 159,28 143,27"/>
-<area shape="rect" id="edge6" href="/edges/9" title="Parent &#45;&gt; Child" alt="" coords="167,20,268,39"/>
-<area shape="poly" id="edge8" href="/edges/10" title="Objective &#45;&gt; Strategy" alt="" coords="143,12 183,8 224,9 256,15 267,21 271,29 267,37 258,43 231,49 194,51 156,48 156,43 194,46 230,44 256,38 263,34 265,29 263,25 254,20 224,14 183,13 143,18"/>
-<area shape="rect" id="edge8" href="/edges/10" title="Objective &#45;&gt; Strategy" alt="" coords="268,20,413,39"/>
-<area shape="rect" id="node5" href="/nodes/5" title="node5" alt="" coords="5,464,77,512"/>
-<area shape="poly" id="edge14" href="/edges/3" title="Parent &#45;&gt; Child" alt="" coords="72,394 57,407 45,422 39,451 34,450 40,420 53,403 69,390"/>
-<area shape="rect" id="edge14" href="/edges/3" title="Parent &#45;&gt; Child" alt="" coords="43,421,144,440"/>
-<area shape="rect" id="node6" href="/nodes/13" title="node 55" alt="" coords="129,464,217,512"/>
-<area shape="poly" id="edge16" href="/edges/7" title="Parent &#45;&gt; Child" alt="" coords="129,396 146,420 161,450 157,452 142,423 125,399"/>
-<area shape="rect" id="edge16" href="/edges/7" title="Parent &#45;&gt; Child" alt="" coords="155,421,256,440"/>
-<area shape="rect" id="node7" href="/nodes/14" title="node new attempt" alt="" coords="83,579,264,627"/>
-<area shape="poly" id="edge18" href="/edges/8" title="Parent &#45;&gt; Child" alt="" coords="176,512 176,565 171,565 171,512"/>
-<area shape="rect" id="edge18" href="/edges/8" title="Parent &#45;&gt; Child" alt="" coords="173,536,275,555"/>
+<area shape="rect" id="node1" href="/nodes/13" title="node 55" alt="" coords="129,120,217,168"/>
+<area shape="rect" id="node3" href="/nodes/2" title="node2" alt="" coords="5,235,77,283"/>
+<area shape="poly" id="edge4" href="/edges/20" title="Parent &#45;&gt; Child" alt="" coords="130,158 98,172 69,194 52,223 47,220 65,190 95,167 128,153"/>
+<area shape="rect" id="edge4" href="/edges/20" title="Parent &#45;&gt; Child" alt="" coords="67,192,168,211"/>
+<area shape="rect" id="node4" href="/nodes/3" title="node3" alt="" coords="137,235,209,283"/>
+<area shape="poly" id="edge6" href="/edges/21" title="Parent &#45;&gt; Child" alt="" coords="176,168 176,221 171,221 171,168"/>
+<area shape="rect" id="edge6" href="/edges/21" title="Parent &#45;&gt; Child" alt="" coords="173,192,275,211"/>
+<area shape="rect" id="node5" href="/nodes/4" title="node4" alt="" coords="197,349,269,397"/>
+<area shape="poly" id="edge10" href="/edges/22" title="Parent &#45;&gt; Child" alt="" coords="219,151 251,165 266,176 278,191 295,225 298,257 292,289 278,326 271,340 267,337 274,324 287,287 293,257 290,227 274,193 263,180 249,170 217,155"/>
+<area shape="rect" id="edge10" href="/edges/22" title="Parent &#45;&gt; Child" alt="" coords="296,249,397,268"/>
+<area shape="rect" id="node2" href="/nodes/1" title="node1" alt="" coords="137,5,209,53"/>
+<area shape="poly" id="edge2" href="/edges/19" title="Parent &#45;&gt; Child" alt="" coords="176,54 176,106 171,106 171,54"/>
+<area shape="rect" id="edge2" href="/edges/19" title="Parent &#45;&gt; Child" alt="" coords="173,77,275,96"/>
+<area shape="poly" id="edge8" href="/edges/23" title="Parent &#45;&gt; Child" alt="" coords="172,283 172,304 177,324 189,341 185,344 172,326 166,305 166,283"/>
+<area shape="rect" id="edge8" href="/edges/23" title="Parent &#45;&gt; Child" alt="" coords="175,307,276,325"/>
 </map>

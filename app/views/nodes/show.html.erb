@@ -2,20 +2,8 @@
 
 <p><b>Name:</b> <%= @node.name %></p>
 
-<% @nodes_array = [@node]; @i = 0; @edges_array = []; @j = 0%>
+<%= render :partial => "paint_graph" %>
 
-<%= render :partial => "collect_node_up", :object => @node %>
-<%= render :partial => "collect_node_down", :object => @node %>
-<%= render :partial => "construct_graph_file" %>
-
-<p><b>Context</b></p>
-<p>
-<!--<p><a href="/cgi-bin/webdot/mickdot.dot.dot.map"> <img src="/cgi-bin/webdot/mickdot.dot.dot.svg" ismap> </a>    -->
-<%@xx = `/opt/local/bin/dot -v -Tcmapx -opublic/images/x.map -Tpng -opublic/images/x.png public/mickdot.dot`%> 
-<%= image_tag "x.png", {:usemap => "#G"}  %>
-<!--The following line reads an image file and applies it to the HTML to be used by the image-->
-<%my1_file = File.open("public/images/x.map","r"); @filetext = my1_file.gets(nil); my1_file.close%> <%=raw @filetext%>
-</p>
 
 <p>
 <%= link_to 'Edit', edit_node_path(@node) %> 

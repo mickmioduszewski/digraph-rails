@@ -6,7 +6,7 @@
       <%if !@nodes_array.include?(edge.sink)%>
         <%@i=@i+1%>
         <%@nodes_array[@i] = edge.sink%>
-        <%= render :partial => "collect_node_down", :object => edge.sink %>
+        <%= render :partial => "nodes/collect_node_down", :object => edge.sink %>
       <%end%>
     <%end%>
   <%end%>
