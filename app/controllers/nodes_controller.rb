@@ -1,4 +1,7 @@
 class NodesController < ApplicationController
+
+  before_filter :authenticate_user!
+
   # GET /nodes
   # GET /nodes.xml
   def index

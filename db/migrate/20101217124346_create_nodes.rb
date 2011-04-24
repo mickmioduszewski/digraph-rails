@@ -5,6 +5,8 @@ class CreateNodes < ActiveRecord::Migration
 
       t.timestamps
     end
+    add_index(:nodes, :name)
+    
   end
 
   def self.down

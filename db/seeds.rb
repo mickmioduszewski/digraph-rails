@@ -5,3 +5,5 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+
+et = EdgeType.create([{ :name => "Objective->Strategy", :source_type => "Objective", :sink_type => "Strategy"}, { :name => "Parent->Child", :source_type => "Parent", :sink_type => "Child"}])

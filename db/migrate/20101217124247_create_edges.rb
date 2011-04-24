@@ -6,6 +6,8 @@ class CreateEdges < ActiveRecord::Migration
 
       t.timestamps
     end
+    add_index(:edges, :source_id)
+    add_index(:edges, :sink_id)    
   end
 
   def self.down

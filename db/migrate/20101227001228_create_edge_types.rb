@@ -7,6 +7,7 @@ class CreateEdgeTypes < ActiveRecord::Migration
 
       t.timestamps
     end
+    add_index(:edge_types, :name)
   end
 
   def self.down
