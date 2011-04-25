@@ -1,5 +1,5 @@
 <% @nodes_array = [@node]; @i = 0; @edges_array = []; @j = 0%>
-
+<% @node_size_array = [16]; @node_size = 12; @edge_size_array = []; @edge_size = 10%> 
 <%= render :partial => "nodes/collect_node_up", :object => @node %>
 <%= render :partial => "nodes/collect_node_down", :object => @node %>
 <%= render :partial => "nodes/construct_graph_file" %>

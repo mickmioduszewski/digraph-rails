@@ -1,15 +1,21 @@
 <%@filetext = "digraph G { \n"%>
-<%@filetext << "edge [color=\"#666666\", arrowhead=\"open\", fontname=\"Trebuchet MS\", fontsize=\"11\"] \n"%>
-<%@filetext << "node [color=\"#757116\", style=filled, shape=box, fontname=\"Trebuchet MS\", fontcolor=\"White\"]\n"%>
+<%@filetext << "edge [color=\"#666666\", arrowhead=\"open\", fontname=\"Trebuchet MS\"] \n"%>
+<%@filetext << "node [shape=plaintext, fontname=\"Trebuchet MS\"]\n"%>
+
+<%@i=0%>
 <%@nodes_array.each do |node|%>
-  <%@filetext << "n#{node.id} [URL=\"/nodes/#{node.id}\",  label=\"#{node.name}\""%>
+  <%@filetext << "n#{node.id} [URL=\"/nodes/#{node.id}\",  label=\"#{node.name}\", fontsize=\"#{@node_size_array[@i]}\""%>
   <%if node == @node%>
-    <%@filetext << ", style=filled fillcolor=\"#00477f\""%>
+    <%@filetext << ", style=filled fillcolor=\"#00477f\", fontcolor=\"White\""%>
   <%end%>
-  <%@filetext << "]\n"%>  
+  <%@filetext << "]\n"%>
+  <%@i+=1%>  
 <%end%>
+
+<%@i=0%>
 <%@edges_array.each do |edge|%>
-  <%@filetext << "n#{edge.source_id} -> n#{edge.sink_id} [URL=\"/edges/#{edge.id}\",  label=\"#{edge.edge_type.name}\"]\n"%>
+  <%@filetext << "n#{edge.source_id} -> n#{edge.sink_id} [URL=\"/edges/#{edge.id}\",  label=\"#{edge.edge_type.name}\", fontsize=\"#{@edge_size_array[@i]}\"]\n"%>
+  <%@i+=1%>
 <%end%>
 <%@filetext << "  }"%>
 <%my_file = File.new("public/mickdot.dot","w")%>

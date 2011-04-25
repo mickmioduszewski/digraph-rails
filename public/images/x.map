@@ -1,9 +1,21 @@
 <map id="G" name="G">
-<area shape="rect" id="node1" href="/nodes/1" title="sdro" alt="" coords="5,5,77,53"/>
-<area shape="rect" id="node2" href="/nodes/3" title="test 2" alt="" coords="5,120,77,168"/>
-<area shape="poly" id="edge2" href="/edges/2" title="Objective&#45;&gt;Strategy" alt="" coords="44,54 44,106 39,106 39,54"/>
-<area shape="rect" id="edge2" href="/edges/2" title="Objective&#45;&gt;Strategy" alt="" coords="41,77,176,96"/>
-<area shape="rect" id="node3" href="/nodes/5" title="test 3" alt="" coords="5,235,77,283"/>
-<area shape="poly" id="edge4" href="/edges/6" title="Objective&#45;&gt;Strategy" alt="" coords="44,168 44,221 39,221 39,168"/>
-<area shape="rect" id="edge4" href="/edges/6" title="Objective&#45;&gt;Strategy" alt="" coords="41,192,176,211"/>
+<area shape="rect" id="node1" href="/nodes/14" title="Operations" alt="" coords="104,120,227,168"/>
+<area shape="rect" id="node3" href="/nodes/15" title="Financial accounting" alt="" coords="5,235,171,283"/>
+<area shape="poly" id="edge4" href="/edges/17" title="Parent&#45;&gt;Child" alt="" coords="151,170 114,225 110,222 147,167"/>
+<area shape="rect" id="edge4" href="/edges/17" title="Parent&#45;&gt;Child" alt="" coords="132,193,212,210"/>
+<area shape="rect" id="node5" href="/nodes/16" title="Management accounting" alt="" coords="195,235,384,283"/>
+<area shape="poly" id="edge8" href="/edges/18" title="Parent&#45;&gt;Child" alt="" coords="194,166 219,190 255,223 251,227 216,194 190,170"/>
+<area shape="rect" id="edge8" href="/edges/18" title="Parent&#45;&gt;Child" alt="" coords="237,193,317,210"/>
+<area shape="rect" id="node2" href="/nodes/13" title="SAX institute" alt="" coords="109,5,221,53"/>
+<area shape="poly" id="edge2" href="/edges/16" title="Parent&#45;&gt;Child" alt="" coords="168,54 168,106 163,106 163,54"/>
+<area shape="rect" id="edge2" href="/edges/16" title="Parent&#45;&gt;Child" alt="" coords="165,78,245,95"/>
+<area shape="rect" id="node4" href="/nodes/18" title="Distribute reports" alt="" coords="25,347,151,395"/>
+<area shape="poly" id="edge6" href="/edges/20" title="Objective&#45;&gt;Strategy" alt="" coords="91,283 91,333 85,333 85,283"/>
+<area shape="rect" id="edge6" href="/edges/20" title="Objective&#45;&gt;Strategy" alt="" coords="88,307,193,322"/>
+<area shape="rect" id="node6" href="/nodes/17" title="Provide Advice " alt="" coords="233,347,345,395"/>
+<area shape="poly" id="edge10" href="/edges/19" title="Parent&#45;&gt;Child" alt="" coords="292,283 292,333 287,333 287,283"/>
+<area shape="rect" id="edge10" href="/edges/19" title="Parent&#45;&gt;Child" alt="" coords="289,307,359,322"/>
+<area shape="rect" id="node7" href="/nodes/20" title="to me" alt="" coords="253,453,325,501"/>
+<area shape="poly" id="edge12" href="/edges/25" title="Objective&#45;&gt;Strategy" alt="" coords="292,395 292,440 287,440 287,395"/>
+<area shape="rect" id="edge12" href="/edges/25" title="Objective&#45;&gt;Strategy" alt="" coords="289,419,359,429"/>
 </map>

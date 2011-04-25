@@ -9,7 +9,7 @@
 <%= link_to 'Edit', edit_node_path(@node) %> 
 <%= link_to 'Back', nodes_path %>
 </p>
-<%@edge = Edge.new%>
+<%@edge = Edge.new; @edge.source_id=@node.id%>
 <%= render 'edges/form' %>
 
 

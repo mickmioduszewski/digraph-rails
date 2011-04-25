@@ -2,11 +2,19 @@
   <% collect_node_up.edges_as_sink.each do |edge|  %>
     <%if !@edges_array.include?(edge)%>      
       <%@edges_array[@j] = edge%>
+      <%@edge_size_array[@j] = @edge_size%>
       <%@j=@j+1%>
       <%if !@nodes_array.include?(edge.source)%>
         <%@i=@i+1%>
         <%@nodes_array[@i] = edge.source%>
-        <%= render :partial => "nodes/collect_node_up", :object => edge.source %>
+        <%@node_size_array[@i] = @node_size%>
+        
+        <%if @node_size > 6%>
+          <%@node_size -= 2; @edge_size -= 2%>
+          <%= render :partial => "nodes/collect_node_up", :object => edge.source %>
+          <%@node_size += 2; @edge_size += 2%>
+        <%end%>
+        
       <%end%>
     <%end%>
   <%end%>
