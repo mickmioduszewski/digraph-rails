@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Node:</b>
+  <%= @task.node.name %>
+</p>
+
+<p>
+  <b>Original due:</b>
+  <%= @task.original_due %>
+</p>
+
+<p>
+  <b>Approved due:</b>
+  <%= @task.approved_due %>
+</p>
+
+<p>
+  <b>Forecast due:</b>
+  <%= @task.forecast_due %>
+</p>
+
+<p>
+  <b>Original cost:</b>
+  <%= @task.original_cost %>
+</p>
+
+<p>
+  <b>Approved cost:</b>
+  <%= @task.approved_cost %>
+</p>
+
+<p>
+  <b>Forecast cost:</b>
+  <%= @task.forecast_cost %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @task.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_task_path(@task) %> |
+<%= link_to 'Back', tasks_path %>

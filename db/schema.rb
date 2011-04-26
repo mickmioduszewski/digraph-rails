@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110423212257) do
+ActiveRecord::Schema.define(:version => 20110425085216) do
 
   create_table "edge_types", :force => true do |t|
     t.string   "name"
@@ -40,6 +40,19 @@ ActiveRecord::Schema.define(:version => 20110423212257) do
   end
 
   add_index "nodes", ["name"], :name => "index_nodes_on_name"
+
+  create_table "tasks", :force => true do |t|
+    t.integer  "node_id"
+    t.date     "original_due"
+    t.date     "approved_due"
+    t.date     "forecast_due"
+    t.decimal  "original_cost", :default => 0.0
+    t.decimal  "approved_cost", :default => 0.0
+    t.decimal  "forecast_cost", :default => 0.0
+    t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false

@@ -1,0 +1,50 @@
+<%= form_for(@task) do |f| %>
+  <% if @task.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@task.errors.count, "error") %> prohibited this task from being saved:</h2>
+
+      <ul>
+      <% @task.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="ui-widget">
+    <%= f.label :node_name %> <br>
+    <%= f.text_field :node_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :original_due %><br />
+    <%= f.date_select :original_due %>
+  </div>
+  <div class="field">
+    <%= f.label :approved_due %><br />
+    <%= f.date_select :approved_due %>
+  </div>
+  <div class="field">
+    <%= f.label :forecast_due %><br />
+    <%= f.date_select :forecast_due %>
+  </div>
+  <div class="field">
+    <%= f.label :original_cost %><br />
+    <%= f.text_field :original_cost %>
+  </div>
+  <div class="field">
+    <%= f.label :approved_cost %><br />
+    <%= f.text_field :approved_cost %>
+  </div>
+  <div class="field">
+    <%= f.label :forecast_cost %><br />
+    <%= f.text_field :forecast_cost %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br />
+    <%= f.text_area :notes %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

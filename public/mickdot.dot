@@ -1,17 +1,9 @@
-digraph G { 
+digraph G { rankdir="LR"
 edge [color="#666666", arrowhead="open", fontname="Trebuchet MS"] 
 node [shape=plaintext, fontname="Trebuchet MS"]
-n14 [URL="/nodes/14",  label="Operations", fontsize="16", style=filled fillcolor="#00477f", fontcolor="White"]
-n13 [URL="/nodes/13",  label="SAX institute", fontsize="12"]
-n15 [URL="/nodes/15",  label="Financial accounting", fontsize="12"]
-n18 [URL="/nodes/18",  label="Distribute reports", fontsize="10"]
-n16 [URL="/nodes/16",  label="Management accounting", fontsize="12"]
-n17 [URL="/nodes/17",  label="Provide Advice ", fontsize="10"]
-n20 [URL="/nodes/20",  label="to me", fontsize="8"]
-n13 -> n14 [URL="/edges/16",  label="Parent->Child", fontsize="10"]
-n14 -> n15 [URL="/edges/17",  label="Parent->Child", fontsize="10"]
-n15 -> n18 [URL="/edges/20",  label="Objective->Strategy", fontsize="8"]
-n14 -> n16 [URL="/edges/18",  label="Parent->Child", fontsize="10"]
-n16 -> n17 [URL="/edges/19",  label="Parent->Child", fontsize="8"]
-n17 -> n20 [URL="/edges/25",  label="Objective->Strategy", fontsize="6"]
+n35 [URL="/nodes/35",  label="2011 demerit proposal", fontsize="16", style=filled fillcolor="#00477f", fontcolor="White"]
+n22 [URL="/nodes/22",  label="Impr. compliance", fontsize="12"]
+n21 [URL="/nodes/21",  label="strategy draft", fontsize="10"]
+n22 -> n35 [URL="/edges/36",  label="o->s", fontsize="10"]
+n21 -> n22 [URL="/edges/26",  label="o->s", fontsize="8"]
   }
