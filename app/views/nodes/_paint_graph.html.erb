@@ -10,9 +10,9 @@
 <p><b>Context</b></p>
 <p>
 
-<%@xx = `/opt/local/bin/dot -v -Tcmapx -opublic/images/x.map -Tpng -opublic/images/x.png public/mickdot.dot`%> 
+<%@xx = `/opt/local/bin/dot -v -Tcmapx -opublic/images/#{current_user.email}.map -Tpng -opublic/images/#{current_user.email}.png public/#{current_user.email}.dot`%> 
 <%= image_tag "x.png", {:usemap => "#G"}  %>
 
 <!--The following line reads an image file and applies it to the HTML to be used by the image-->
-<%my1_file = File.open("public/images/x.map","r"); @filetext = my1_file.gets(nil); my1_file.close%> <%=raw @filetext%>
+<%my1_file = File.open("public/images/#{current_user.email}.map","r"); @filetext = my1_file.gets(nil); my1_file.close%> <%=raw @filetext%>
 </p>

@@ -18,6 +18,6 @@
   <%@i+=1%>
 <%end%>
 <%@filetext << "  }"%>
-<%my_file = File.new("public/mickdot.dot","w")%>
+<%my_file = File.new("public/#{current_user.email}.dot","w")%>
 <%my_file.write @filetext%>
 <%my_file.close%>
