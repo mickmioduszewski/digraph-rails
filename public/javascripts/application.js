@@ -61,30 +61,3 @@ $(function() {
 	
 	
 	
-	$(function() {
-		$( "#task_node_name" ).autocomplete({
-			source: function( request, response ) {
-				$.ajax({
-					url: "http://digraph.dev/nodes.json",
-					dataType: "json",
-					data: {						
-						term: request.term
-					},
-					success: function( data ) {
-						response( $.map( data, function( item ) {
-							return {
-								label: item.node.name + " (" + item.node.id + ")",
-								value: item.node.name
-							}
-						}));
-					}
-				});
-			},
-			open: function() {
-				$( this ).removeClass( "ui-corner-all" ).addClass( "ui-corner-top" );
-			},
-			close: function() {
-				$( this ).removeClass( "ui-corner-top" ).addClass( "ui-corner-all" );
-			}
-		});
-	});	

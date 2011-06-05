@@ -1,16 +1,18 @@
-<% @nodes_array = [@node]; @i = 0; @edges_array = []; @j = 0%>
+<% @nodes_array = [@node]; @edges_array = [] %>
 
-<% @node_size_array = [16]; @node_size = 12; @edge_size_array = []; @edge_size = 10; @size_reduction = 2; @up_reach = 2; @down_reach = 2 %> 
+<% @node_size_array = [current_user.graph_root_node_size]; @node_size = current_user.graph_root_node_size; @edge_size_array = []; @edge_size = current_user.graph_root_edge_size; @size_reduction = current_user.graph_size_reduction; @up_reach = current_user.graph_up_depth; @down_reach = current_user.graph_down_depth %> 
 
+<% @i = 0 %>
 <%= render :partial => "nodes/collect_node_up", :object => @node %>
 <%= render :partial => "nodes/collect_node_down", :object => @node %>
 <%= render :partial => "nodes/construct_graph_file" %>
 
 <p><b>Context</b></p>
 <p>
-<!--<p><a href="/cgi-bin/webdot/mickdot.dot.dot.map"> <img src="/cgi-bin/webdot/mickdot.dot.dot.svg" ismap> </a>    -->
+
 <%@xx = `/opt/local/bin/dot -v -Tcmapx -opublic/images/x.map -Tpng -opublic/images/x.png public/mickdot.dot`%> 
 <%= image_tag "x.png", {:usemap => "#G"}  %>
+
 <!--The following line reads an image file and applies it to the HTML to be used by the image-->
 <%my1_file = File.open("public/images/x.map","r"); @filetext = my1_file.gets(nil); my1_file.close%> <%=raw @filetext%>
 </p>
