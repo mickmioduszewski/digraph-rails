@@ -1,6 +1,18 @@
 // Place your application-specific JavaScript functions and classes here
 // This file is automatically included by javascript_include_tag :defaults
 
+function toggleblock(showHideDiv, switchTextDiv, showText, hideText) {
+	var ele = document.getElementById(showHideDiv);
+	var text = document.getElementById(switchTextDiv);
+	if(ele.style.display == "block") {
+    		ele.style.display = "none";
+		text.innerHTML = showText ? showText : "Show";
+  	}
+	else {
+		ele.style.display = "block";
+		text.innerHTML = hideText ? hideText : "Hide";
+	}
+}
 
 $(function() {
 		$( "#edge_source_name" ).autocomplete({
