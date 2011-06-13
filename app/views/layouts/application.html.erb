@@ -4,27 +4,43 @@
   <title>Digraph <%= params[:controller]%></title>
 
   <%= javascript_include_tag :defaults %>
+	<%= javascript_include_tag 'hoverIntent', 'superfish' %>
 
   <%= stylesheet_link_tag 'ui-lightness/jquery-ui-1.8.7.custom' %>
-  <%= stylesheet_link_tag 'scaffold', "mick" %>
+  <%= stylesheet_link_tag 'scaffold', 'mick', 'superfish' %>
 
   <meta charset="utf-8"
-  <%= csrf_meta_tag %>
-
-  
-  
+  <%= csrf_meta_tag %>  
 </head>
+
 <body>
   <div id="user_nav">
     <% if user_signed_in? %>
-      Signed in as <%=current_user.email%>. Not you?
-      <%=link_to "Sign out", destroy_user_session_path%>
+      Signed in as <%=current_user.email%>. Not you? <%=link_to "Sign out", destroy_user_session_path%>
     <% else %>
       <%=link_to "Sign up", new_user_registration_path%> or <%=link_to "Sign in", new_user_session_path%>.
     <% end %>
   </div>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+
+<% flash.each do |key, msg|%>
+	<%=content_tag :div, content_tag(:p, msg), :id=>key%>
+<% end %>
+
+<ul class="sf-menu">
+	<li>
+		<a href="#">Menu &darr;</a>
+		<ul>
+			<li><%= link_to 'Nodes', nodes_path %></li>
+			<li><%= link_to 'Edges', edges_path %></li>
+			<li><%= link_to 'Edge types', edge_types_path %></li>
+			<li><%= link_to 'Edit user registration', edit_user_registration_path %></li>
+			
+		</ul>
+	</li>
+</ul>
+
+<div id="clearboth"></div>
+
 <%= yield %>
 
 </body>

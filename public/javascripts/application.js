@@ -1,6 +1,10 @@
 // Place your application-specific JavaScript functions and classes here
 // This file is automatically included by javascript_include_tag :defaults
 
+jQuery(function(){
+	jQuery('ul.sf-menu').superfish();
+});
+
 function toggleblock(showHideDiv, switchTextDiv, showText, hideText) {
 	var ele = document.getElementById(showHideDiv);
 	var text = document.getElementById(switchTextDiv);
@@ -70,6 +74,6 @@ $(function() {
 			}
 		});
 	});
-	
-	
-	
+
+
+

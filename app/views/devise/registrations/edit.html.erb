@@ -15,6 +15,31 @@
   <p><%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
   <%= f.password_field :current_password %></p>
 
+  <p><%= f.label :user_name %><br />
+  <%= f.email_field :user_name %></p>
+
+  <p><%= f.label :comment %><br />
+  <%= f.email_field :comment %></p>
+
+  <p><%= f.label :graph_direction %><br />
+  <%= f.email_field :graph_direction %></p>
+
+  <p><%= f.label :graph_root_node_size %><br />
+  <%= f.email_field :graph_root_node_size %></p>
+
+  <p><%= f.label :graph_root_edge_size %><br />
+  <%= f.email_field :graph_root_edge_size %></p>
+
+  <p><%= f.label :graph_size_reduction %><br />
+  <%= f.email_field :graph_size_reduction %></p>
+
+  <p><%= f.label :graph_up_depth %><br />
+  <%= f.email_field :graph_up_depth %></p>
+
+  <p><%= f.label :graph_down_depth %><br />
+  <%= f.email_field :graph_down_depth %></p>
+
+
   <p><%= f.submit "Update" %></p>
 <% end %>
 

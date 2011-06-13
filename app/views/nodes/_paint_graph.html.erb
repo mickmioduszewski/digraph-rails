@@ -7,7 +7,7 @@
 <%= render :partial => "nodes/collect_node_down", :object => @node %>
 <%= render :partial => "nodes/construct_graph_file" %>
 
-<p><b>Context</b></p>
+
 <p>
 
 <%@xx = `/opt/local/bin/dot -v -Tcmapx -opublic/images/#{current_user.email}.map -Tpng -opublic/images/#{current_user.email}.png public/#{current_user.email}.dot`%> 

@@ -12,3 +12,13 @@ border: 1px #E6E6E6 solid;
 td
 {
 border: 1px #E6E6E6 solid;}
+
+#user_nav 
+{
+float:right;
+}
+
+#clearboth
+{
+clear:both;
+}
