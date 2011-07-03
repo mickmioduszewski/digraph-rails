@@ -14,9 +14,20 @@
 
 <%@i=0%>
 <%@edges_array.each do |edge|%>
-  <%@filetext << "n#{edge.source_id} -> n#{edge.sink_id} [URL=\"/edges/#{edge.id}\",  label=\"#{edge.edge_type.name}\", fontsize=\"#{@edge_size_array[@i]}\"]\n"%>
+	<% if edge.name == '.' 								then 	edgename=''-%>
+	<% elsif !edge.name.empty? 						then 	edgename=edge.name -%>
+	<% elsif 	edge.edge_type.name ==	'.' then	edgename=''-%>
+	<% else 																		edgename=edge.edge_type.name -%>
+	<% end -%>
+	
+	<%@filetext << "n#{edge.source_id} -> n#{edge.sink_id} [URL=\"/edges/#{edge.id}\""%>
+	<% if edgename.empty?; @filetext <<"]\n"%>
+	<% else; 						@filetext <<",  label=\"#{edgename}\", fontsize=\"#{@edge_size_array[@i]}\"]\n"%>
+	<% end -%>
+	
+	
   <%@i+=1%>
-<%end%>
+<%end-%>
 <%@filetext << "  }"%>
 <%my_file = File.new("public/#{current_user.email}.dot","w")%>
 <%my_file.write @filetext%>

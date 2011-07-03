@@ -1,4 +1,7 @@
 class EdgeTypesController < ApplicationController
+
+  uses_tiny_mce
+
   # GET /edge_types
   # GET /edge_types.xml
   def index

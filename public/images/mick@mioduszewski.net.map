@@ -1,30 +1,58 @@
 <map id="G" name="G">
-<area shape="rect" id="node1" href="/nodes/3" title="strat 1" alt="" coords="518,109,602,157"/>
-<area shape="poly" id="edge10" href="/edges/4" title=" ." alt="" coords="544,109,546,91,552,85,560,83,570,86,575,94,570,97,566,90,560,88,555,90,551,94,550,109"/>
-<area shape="rect" id="edge10-label" href="/edges/4" title=" ." alt="" coords="553,65,567,85"/>
-<area shape="rect" id="node5" href="/nodes/4" title="strat 2" alt="" coords="665,5,743,53"/>
-<area shape="poly" id="edge12" href="/edges/5" title=" ." alt="" coords="587,107,625,77,652,58,655,62,628,81,590,111"/>
-<area shape="rect" id="edge12-label" href="/edges/5" title=" ." alt="" coords="627,49,640,69"/>
-<area shape="rect" id="node6" href="/nodes/7" title="strat 5" alt="" coords="805,45,877,93"/>
-<area shape="poly" id="edge20" href="/edges/8" title=" ." alt="" coords="602,121,792,78,793,83,603,126"/>
-<area shape="rect" id="edge20-label" href="/edges/8" title=" ." alt="" coords="697,71,711,91"/>
-<area shape="rect" id="node7" href="/nodes/5" title="strat 3" alt="" coords="665,145,743,193"/>
-<area shape="poly" id="edge16" href="/edges/6" title=" ." alt="" coords="603,141,652,154,651,159,602,146"/>
-<area shape="rect" id="edge16-label" href="/edges/6" title=" ." alt="" coords="627,129,640,149"/>
-<area shape="rect" id="node8" href="/nodes/6" title="strat 4" alt="" coords="665,217,743,265"/>
-<area shape="poly" id="edge18" href="/edges/7" title=" ." alt="" coords="595,155,662,207,659,211,591,160"/>
-<area shape="rect" id="edge18-label" href="/edges/7" title=" ." alt="" coords="627,164,640,184"/>
-<area shape="rect" id="node2" href="/nodes/1" title="objective 1" alt="" coords="160,100,277,148"/>
-<area shape="poly" id="edge2" href="/edges/2" title=" ." alt="" coords="278,120,378,119,493,123,505,124,504,129,493,128,378,124,278,125"/>
-<area shape="rect" id="edge2-label" href="/edges/2" title=" ." alt="" coords="391,101,404,121"/>
-<area shape="rect" id="node4" href="/nodes/2" title="objective 2" alt="" coords="339,153,456,201"/>
-<area shape="poly" id="edge8" href="/edges/1" title=" ." alt="" coords="278,139,326,153,324,158,277,144"/>
-<area shape="rect" id="edge8-label" href="/edges/1" title=" ." alt="" coords="302,131,314,148"/>
-<area shape="rect" id="node3" href="/nodes/8" title="objective" alt="" coords="6,100,98,148"/>
-<area shape="poly" id="edge4" href="/edges/9" title=" ." alt="" coords="98,121,146,121,146,127,98,127"/>
-<area shape="rect" id="edge4-label" href="/edges/9" title=" ." alt="" coords="123,107,135,124"/>
-<area shape="poly" id="edge6" href="/edges/3" title=" ." alt="" coords="456,159,504,146,505,151,457,164"/>
-<area shape="rect" id="edge6-label" href="/edges/3" title=" ." alt="" coords="480,131,493,151"/>
-<area shape="poly" id="edge14" href="/edges/11" title=" ." alt="" coords="744,38,793,53,791,58,743,43"/>
-<area shape="rect" id="edge14-label" href="/edges/11" title=" ." alt="" coords="769,31,781,48"/>
+<area shape="rect" id="node1" href="/nodes/7" title="SDRO" alt="" coords="667,401,739,449"/>
+<area shape="rect" id="node5" href="/nodes/18" title="confirm details request" alt="" coords="1133,113,1371,161"/>
+<area shape="poly" id="edge36" href="/edges/24" alt="" coords="701,401,704,363,713,318,731,271,744,250,761,231,799,202,842,178,888,161,935,148,1030,134,1118,131,1119,136,1031,139,936,153,889,166,844,183,802,206,764,235,748,253,735,274,718,319,709,364,706,401"/>
+<area shape="rect" id="node13" href="/nodes/36" title="Update various details" alt="" coords="1135,185,1369,233"/>
+<area shape="poly" id="edge46" href="/edges/58" alt="" coords="708,400,725,351,741,326,761,305,801,277,845,255,892,238,939,226,1034,211,1121,207,1122,212,1035,216,940,231,893,243,847,260,804,282,764,309,745,329,730,354,713,402"/>
+<area shape="rect" id="node16" href="/nodes/9" title="Withdrawal request" alt="" coords="1148,257,1356,305"/>
+<area shape="poly" id="edge30" href="/edges/6" alt="" coords="713,400,732,369,761,343,806,320,853,303,902,289,951,280,1048,270,1134,269,1134,274,1048,275,952,285,903,294,855,308,808,325,764,348,736,373,717,403"/>
+<area shape="rect" id="node17" href="/nodes/10" title="Initial assignment of debt" alt="" coords="1123,329,1381,377"/>
+<area shape="poly" id="edge32" href="/edges/8" title="send appropriate detail" alt="" coords="738,410,762,404,851,388,942,375,1108,359,1109,364,942,380,852,393,763,409,740,416"/>
+<area shape="rect" id="edge32-label" href="/edges/8" title="send appropriate detail" alt="" coords="763,351,984,375"/>
+<area shape="rect" id="node18" href="/nodes/14" title="merge clients" alt="" coords="1179,401,1325,449"/>
+<area shape="poly" id="edge34" href="/edges/15" alt="" coords="739,423,1165,423,1165,428,739,428"/>
+<area shape="rect" id="node19" href="/nodes/27" title="operating boundaries" alt="" coords="1141,473,1363,521"/>
+<area shape="poly" id="edge38" href="/edges/40" title="give and enforce" alt="" coords="740,443,763,452,857,473,953,487,1045,494,1127,497,1127,502,1045,499,952,492,856,478,762,457,738,448"/>
+<area shape="rect" id="edge38-label" href="/edges/40" title="give and enforce" alt="" coords="795,431,952,455"/>
+<area shape="rect" id="node20" href="/nodes/30" title="authorisation for settlement" alt="" coords="1110,545,1394,593"/>
+<area shape="poly" id="edge40" href="/edges/46" alt="" coords="719,448,738,473,764,495,803,515,844,531,930,554,1016,567,1097,572,1096,577,1016,572,929,559,843,536,801,520,761,500,734,477,715,451"/>
+<area shape="rect" id="node21" href="/nodes/31" title="Performance report and settlement of commission" alt="" coords="1009,617,1495,665"/>
+<area shape="poly" id="edge42" href="/edges/49" alt="" coords="709,449,715,478,725,510,741,542,764,569,816,602,874,625,934,641,995,650,995,655,933,646,872,630,814,606,761,573,736,545,720,512,709,479,704,450"/>
+<area shape="rect" id="node22" href="/nodes/35" title="Management of queries and complaints" alt="" coords="1060,689,1444,737"/>
+<area shape="poly" id="edge44" href="/edges/56" title="perform" alt="" coords="709,449,715,505,726,575,742,640,753,664,764,679,784,691,810,701,878,714,960,720,1046,721,1046,726,960,725,877,719,808,706,781,696,761,683,748,666,737,641,720,576,709,506,703,450"/>
+<area shape="rect" id="edge44-label" href="/edges/56" title="perform" alt="" coords="835,657,912,681"/>
+<area shape="rect" id="node23" href="/nodes/17" title="TTP application approval" alt="" coords="1123,761,1381,809"/>
+<area shape="poly" id="edge48" href="/edges/64" alt="" coords="708,449,712,515,722,599,739,678,751,708,765,727,801,755,841,777,885,792,930,803,1022,811,1109,807,1110,813,1022,816,929,808,883,797,839,782,798,760,761,731,746,710,734,679,717,600,707,515,702,450"/>
+<area shape="rect" id="node24" href="/nodes/41" title="write off" alt="" coords="1199,833,1305,881"/>
+<area shape="poly" id="edge50" href="/edges/79" alt="" coords="707,449,708,532,716,643,723,699,733,749,747,789,765,815,811,849,863,872,920,886,978,892,1036,892,1092,888,1185,872,1186,877,1092,893,1037,898,978,898,919,891,862,877,808,854,761,819,742,791,728,750,718,700,711,644,703,533,701,450"/>
+<area shape="rect" id="node2" href="/nodes/12" title="confirm assignment" alt="" coords="117,5,320,53"/>
+<area shape="poly" id="edge2" href="/edges/13" alt="" coords="320,26,401,34,490,54,533,71,574,91,612,118,645,150,656,168,665,194,681,258,700,387,695,388,676,259,660,195,651,171,641,154,609,122,572,96,531,75,488,60,401,39,320,31"/>
+<area shape="rect" id="node3" href="/nodes/13" title="confirm withdrawal" alt="" coords="116,77,321,125"/>
+<area shape="poly" id="edge4" href="/edges/14" alt="" coords="322,98,401,106,489,125,532,141,573,161,611,186,645,217,672,257,689,303,699,348,703,387,698,388,694,349,684,305,667,260,641,220,608,190,570,166,530,146,487,131,401,111,321,103"/>
+<area shape="rect" id="node4" href="/nodes/15" title="Payment" alt="" coords="169,149,269,197"/>
+<area shape="poly" id="edge6" href="/edges/17" alt="" coords="269,169,350,172,450,187,502,200,553,220,602,246,645,279,665,304,680,332,698,387,692,388,675,334,660,307,641,283,599,250,551,225,501,206,449,192,349,177,269,174"/>
+<area shape="poly" id="edge8" href="/edges/23" alt="" coords="1132,118,1042,116,994,120,944,128,895,140,848,158,804,181,764,211,748,230,735,251,717,298,709,346,706,388,701,388,704,345,712,296,730,248,744,226,761,207,801,177,846,153,894,135,943,123,993,115,1042,111,1132,112"/>
+<area shape="rect" id="node6" href="/nodes/19" title="Representation" alt="" coords="137,221,300,269"/>
+<area shape="poly" id="edge10" href="/edges/28" alt="" coords="301,241,378,247,468,261,514,273,560,289,604,309,644,334,669,359,688,388,683,390,665,362,641,338,601,314,558,294,513,278,467,266,378,252,300,247"/>
+<area shape="rect" id="node7" href="/nodes/20" title="Annulment application" alt="" coords="104,293,333,341"/>
+<area shape="poly" id="edge12" href="/edges/29" alt="" coords="334,315,405,320,484,331,566,349,644,376,667,390,665,395,642,381,564,354,483,336,405,326,333,321"/>
+<area shape="rect" id="node8" href="/nodes/26" title="????enrich consequence actions" alt="" coords="65,365,373,413"/>
+<area shape="poly" id="edge14" href="/edges/39" title="action" alt="" coords="373,398,653,419,653,424,373,403"/>
+<area shape="rect" id="edge14-label" href="/edges/39" title="action" alt="" coords="521,384,578,408"/>
+<area shape="rect" id="node9" href="/nodes/28" title="SLA compliance reports" alt="" coords="99,437,338,485"/>
+<area shape="poly" id="edge16" href="/edges/43" title="receive and manage" alt="" coords="338,468,484,467,564,461,642,448,653,445,654,450,643,453,565,466,485,473,338,473"/>
+<area shape="rect" id="edge16-label" href="/edges/43" title="receive and manage" alt="" coords="456,427,643,451"/>
+<area shape="rect" id="node10" href="/nodes/29" title="settlement request" alt="" coords="119,509,318,557"/>
+<area shape="poly" id="edge18" href="/edges/45" alt="" coords="318,534,391,531,474,522,560,504,641,475,669,457,672,461,644,480,561,509,475,527,392,536,318,539"/>
+<area shape="rect" id="node11" href="/nodes/33" title="return case unsolved" alt="" coords="111,581,327,629"/>
+<area shape="poly" id="edge20" href="/edges/53" title="receive" alt="" coords="327,618,402,620,485,613,527,605,567,593,606,576,641,554,660,535,675,511,692,462,697,464,680,514,665,538,644,558,608,581,569,598,528,610,486,618,402,625,327,623"/>
+<area shape="rect" id="edge20-label" href="/edges/53" title="receive" alt="" coords="515,532,584,556"/>
+<area shape="rect" id="node12" href="/nodes/34" title="Calls and correspondence about outsourcer" alt="" coords="5,653,432,701"/>
+<area shape="poly" id="edge22" href="/edges/55" title="receive and manage" alt="" coords="323,699,400,707,485,706,527,699,568,688,606,671,641,647,651,635,660,617,675,568,694,463,699,463,680,570,665,619,655,638,644,651,609,675,570,693,528,705,485,711,400,713,323,704"/>
+<area shape="rect" id="edge22-label" href="/edges/55" title="receive and manage" alt="" coords="456,625,643,649"/>
+<area shape="poly" id="edge24" href="/edges/61" alt="" coords="1135,193,1046,194,948,206,899,218,851,235,806,257,764,285,744,307,729,333,712,388,706,387,724,331,740,304,761,281,803,252,849,230,898,213,947,201,1046,188,1135,188"/>
+<area shape="rect" id="node14" href="/nodes/16" title="TTP application" alt="" coords="135,725,303,773"/>
+<area shape="poly" id="edge26" href="/edges/63" alt="" coords="303,767,383,777,473,777,519,771,563,759,604,740,641,714,653,697,664,672,680,603,691,528,697,463,702,464,696,528,686,604,669,673,658,700,645,718,607,745,565,764,520,776,474,783,382,783,302,772"/>
+<area shape="rect" id="node15" href="/nodes/40" title="return not located" alt="" coords="123,797,315,845"/>
+<area shape="poly" id="edge28" href="/edges/78" alt="" coords="315,841,394,850,482,849,525,842,567,829,606,811,641,785,656,763,669,729,686,640,695,543,698,463,704,464,700,543,691,641,674,730,661,765,645,789,609,815,569,834,526,847,482,854,394,856,315,846"/>
 </map>

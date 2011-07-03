@@ -23,6 +23,11 @@
     <%= f.label :sink_type %><br />
     <%= f.text_field :sink_type %>
   </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description, :class => "mceEditor" %>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

@@ -1,8 +1,9 @@
 class CreateEdges < ActiveRecord::Migration
   def self.up
-    create_table :edges do |t|
-      t.integer :source_id
-      t.integer :sink_id
+    create_table  :edges do |t|
+      t.integer   :source_id
+      t.integer   :sink_id
+      t.string    :name, :default => ""
 
       t.timestamps
     end

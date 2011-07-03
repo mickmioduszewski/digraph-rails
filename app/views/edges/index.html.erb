@@ -5,6 +5,7 @@
     <th>Source</th>
     <th>Sink</th>
     <th>Edge type</th>
+		<th>Edge name</th>
     <th></th>
     <th></th>
     <th></th>
@@ -15,6 +16,7 @@
     <td><%= edge.source_name %></td>
     <td><%= edge.sink_name %></td>
     <td><%= edge.edge_type.name %></td>
+    <td><%= edge.name %></td>
     <td><%= link_to 'Show', edge %></td>
     <td><%= link_to 'Edit', edit_edge_path(edge) %></td>
     <td><%= link_to 'Destroy', edge, :confirm => 'Are you sure?', :method => :delete %></td>

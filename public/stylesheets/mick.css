@@ -22,3 +22,8 @@ float:right;
 {
 clear:both;
 }
+
+.mcetext {
+	border-style: solid;
+	border-width: thin;
+}

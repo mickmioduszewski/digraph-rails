@@ -13,9 +13,10 @@
 ActiveRecord::Schema.define(:version => 20110423212257) do
 
   create_table "edge_types", :force => true do |t|
-    t.string   "name"
+    t.string   "name",        :default => ""
     t.string   "source_type"
     t.string   "sink_type"
+    t.text     "description", :default => ""
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -25,6 +26,7 @@ ActiveRecord::Schema.define(:version => 20110423212257) do
   create_table "edges", :force => true do |t|
     t.integer  "source_id"
     t.integer  "sink_id"
+    t.string   "name",         :default => ""
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "edge_type_id"
