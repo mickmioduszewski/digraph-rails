@@ -1,20 +1,16 @@
 <%if @i < @down_reach and !collect_node_down.edges_as_source.empty?%>
   <%@i += 1%>
-	<%logger.info  "==>Debug down 1 i=#{@i} node=>#{collect_node_down.name}" %>
   <% node_size = (@node_size - @i*@size_reduction) > 0 ? @node_size - @i*@size_reduction : 1 %>
   <% edge_size = (@edge_size - @i*@size_reduction) > 0 ? @edge_size - @i*@size_reduction : 1 %>
   <% collect_node_down.edges_as_source.each do |edge|  %>
-		<%logger.info  "==>Debug down 2 edge=#{edge.source.name}==>#{edge.sink.name} ==>i=#{@i}" %>
     <%if !@edges_array.include?(edge)%>
-      <%logger.info  "==>Debug down 3 edge=#{edge.source.name}==>#{edge.sink.name} ==>i=#{@i}" %>
       <%@edges_array = @edges_array << edge%>
       <%@edge_size_array = @edge_size_array << edge_size%>
       <%if !@nodes_array.include?(edge.sink)%>
-				<%logger.info  "==>Debug down 4 edge=#{edge.source.name}==>#{edge.sink.name} ==>i=#{@i}" %>
         <%@nodes_array = @nodes_array << edge.sink%>
         <%@node_size_array = @node_size_array << node_size%>       
+				<%= render :partial => "nodes/collect_node_down", :object => edge.sink %>
       <%end%>
-			<%= render :partial => "nodes/collect_node_down", :object => edge.sink %>
     <%end%>
   <%end%>
   <%@i -= 1%>
