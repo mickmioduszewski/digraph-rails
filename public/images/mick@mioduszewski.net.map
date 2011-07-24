@@ -1,9 +1,16 @@
 <map id="G" name="G">
-<area shape="rect" id="node1" href="/nodes/18" title="confirm details request" alt="" coords="6,41,245,89"/>
-<area shape="rect" id="node2" href="/nodes/6" title="collection agent" alt="" coords="294,5,453,53"/>
-<area shape="poly" id="edge8" href="/edges/25" alt="" coords="245,54,280,49,281,54,245,60"/>
-<area shape="rect" id="node3" href="/nodes/7" title="SDRO" alt="" coords="337,77,409,125"/>
-<area shape="poly" id="edge6" href="/edges/23" alt="" coords="230,87,324,99,323,104,229,92"/>
-<area shape="poly" id="edge2" href="/edges/22" alt="" coords="294,35,243,42,242,37,294,30"/>
-<area shape="poly" id="edge4" href="/edges/24" alt="" coords="336,92,258,78,259,73,337,87"/>
+<area shape="rect" id="node1" href="/nodes/49" title="Establish control objectives" alt="" coords="176,121,456,169"/>
+<area shape="rect" id="node3" href="/nodes/43" title="Current controls" alt="" coords="561,77,719,125"/>
+<area shape="poly" id="edge4" href="/edges/88" title="Devise" alt="" coords="456,124,547,111,547,117,457,129"/>
+<area shape="rect" id="edge4-label" href="/edges/88" title="Devise" alt="" coords="481,96,535,116"/>
+<area shape="rect" id="node6" href="/nodes/45" title="Risk assessment" alt="" coords="561,149,719,197"/>
+<area shape="poly" id="edge10" href="/edges/90" alt="" coords="457,155,547,163,547,168,456,160"/>
+<area shape="rect" id="node2" href="/nodes/50" title="Governance" alt="" coords="5,121,125,169"/>
+<area shape="poly" id="edge2" href="/edges/89" alt="" coords="125,143,162,143,162,148,125,148"/>
+<area shape="rect" id="node4" href="/nodes/42" title="Audit against controls" alt="" coords="858,5,1033,53"/>
+<area shape="poly" id="edge6" href="/edges/80" alt="" coords="719,76,770,63,844,46,845,51,771,68,720,81"/>
+<area shape="rect" id="node5" href="/nodes/48" title="Evaluate strategic risk and treatment position" alt="" coords="771,77,1119,125"/>
+<area shape="poly" id="edge8" href="/edges/85" alt="" coords="720,99,758,99,758,104,720,104"/>
+<area shape="rect" id="node7" href="/nodes/44" title="Review and revise controls" alt="" coords="837,149,1053,197"/>
+<area shape="poly" id="edge12" href="/edges/82" alt="" coords="720,171,823,171,823,176,720,176"/>
 </map>
