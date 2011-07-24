@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110423212257) do
+ActiveRecord::Schema.define(:version => 20110723134907) do
 
   create_table "edge_types", :force => true do |t|
     t.string   "name",        :default => ""
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(:version => 20110423212257) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "edge_type_id"
+    t.text     "description"
   end
 
   add_index "edges", ["sink_id"], :name => "index_edges_on_sink_id"
@@ -39,6 +40,7 @@ ActiveRecord::Schema.define(:version => 20110423212257) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "description"
   end
 
   add_index "nodes", ["name"], :name => "index_nodes_on_name"

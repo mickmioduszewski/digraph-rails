@@ -1,4 +1,7 @@
 class EdgesController < ApplicationController
+
+  before_filter :authenticate_user!
+
   # GET /edges
   # GET /edges.xml
   def index
