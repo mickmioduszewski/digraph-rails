@@ -3,5 +3,5 @@ db/*.sqlite3
 log/*.log
 tmp/**/*
 public/images/*.png
-public/images/*.dot
-public/*.map
+public/images/*.map
+public/*.dot
