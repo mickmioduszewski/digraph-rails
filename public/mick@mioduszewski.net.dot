@@ -1,0 +1,16 @@
+digraph G {size="12,12", rankdir="LR"
+edge [color="#666666", arrowhead="open", fontname="Trebuchet MS"] 
+node [shape=plaintext, fontname="Trebuchet MS"]
+n43 [URL="/nodes/43",  label="Current controls", fontsize="16", style=filled fillcolor="#00477f", fontcolor="White"]
+n44 [URL="/nodes/44",  label="Review and revise controls", fontsize="14"]
+n49 [URL="/nodes/49",  label="Establish control objectives", fontsize="14"]
+n42 [URL="/nodes/42",  label="Audit against controls", fontsize="14"]
+n46 [URL="/nodes/46",  label="Change projects", fontsize="12"]
+n48 [URL="/nodes/48",  label="Evaluate strategic risk and treatment position", fontsize="14"]
+n44 -> n43 [URL="/edges/81"]
+n49 -> n43 [URL="/edges/88",  label="Devise", fontsize="14"]
+n43 -> n42 [URL="/edges/80"]
+n42 -> n46 [URL="/edges/87"]
+n43 -> n48 [URL="/edges/85"]
+n48 -> n46 [URL="/edges/86"]
+  }
