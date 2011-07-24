@@ -1,0 +1,15 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="/nodes/44" title="Review and revise controls" alt="" coords="269,77,541,125"/>
+<area shape="rect" id="node5" href="/nodes/43" title="Current controls" alt="" coords="590,77,749,125"/>
+<area shape="poly" id="edge8" href="/edges/81" alt="" coords="542,99,576,99,576,104,542,104"/>
+<area shape="rect" id="node2" href="/nodes/45" title="Risk assessment" alt="" coords="34,5,193,53"/>
+<area shape="poly" id="edge2" href="/edges/82" alt="" coords="194,46,294,71,293,77,192,51"/>
+<area shape="rect" id="node3" href="/nodes/46" title="Change projects" alt="" coords="34,77,193,125"/>
+<area shape="poly" id="edge4" href="/edges/83" alt="" coords="193,99,255,99,255,104,193,104"/>
+<area shape="rect" id="node4" href="/nodes/47" title="Change in environment" alt="" coords="6,149,221,197"/>
+<area shape="poly" id="edge6" href="/edges/84" alt="" coords="211,147,293,126,295,131,212,152"/>
+<area shape="rect" id="node6" href="/nodes/42" title="Audit against controls" alt="" coords="885,41,1059,89"/>
+<area shape="poly" id="edge10" href="/edges/80" alt="" coords="748,89,871,75,872,80,749,95"/>
+<area shape="rect" id="node7" href="/nodes/48" title="Evaluate strategic risk and treatment position" alt="" coords="798,113,1146,161"/>
+<area shape="poly" id="edge12" href="/edges/85" alt="" coords="749,108,784,112,784,118,748,113"/>
+</map>
