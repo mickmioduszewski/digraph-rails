@@ -20,16 +20,11 @@ Digraph::Application.configure do
   
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-      :address              => "smtp.gmail.com",
-      :port                 => 587,
-      :user_name            => "mick.mioduszewski@gmail.com",
-      :password             => "ducati916 ",
-      :authentication       => "plain",
+      :address              => "mail.optusnet.com.au",
       :enable_starttls_auto => true
     }
-
           
-  config.action_mailer.default_url_options = { :host => 'digraph.dev' }
+  config.action_mailer.default_url_options = { :host => 'mick.does-it.net' }
 
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log
