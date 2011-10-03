@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -45,9 +46,23 @@ ActiveRecord::Schema.define(:version => 20110723134907) do
 
   add_index "nodes", ["name"], :name => "index_nodes_on_name"
 
+  create_table "user_prefs", :force => true do |t|
+    t.string   "user_name",            :default => "unknown"
+    t.string   "comment",              :default => "none"
+    t.string   "graph_direction",      :default => "LR"
+    t.integer  "graph_root_node_size", :default => 16
+    t.integer  "graph_root_edge_size", :default => 16
+    t.integer  "graph_size_reduction", :default => 2
+    t.integer  "graph_up_depth",       :default => 3
+    t.integer  "graph_down_depth",     :default => 3
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "users", :force => true do |t|
-    t.string   "email",                                 :default => "",        :null => false
-    t.string   "encrypted_password",     :limit => 128, :default => "",        :null => false
+    t.string   "email",                                 :default => "", :null => false
+    t.string   "encrypted_password",     :limit => 128, :default => "", :null => false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
@@ -61,14 +76,6 @@ ActiveRecord::Schema.define(:version => 20110723134907) do
     t.datetime "confirmation_sent_at"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "user_name",                             :default => "unknown"
-    t.string   "comment",                               :default => "none"
-    t.string   "graph_direction",                       :default => "LR"
-    t.integer  "graph_root_node_size",                  :default => 16
-    t.integer  "graph_root_edge_size",                  :default => 16
-    t.integer  "graph_size_reduction",                  :default => 2
-    t.integer  "graph_up_depth",                        :default => 3
-    t.integer  "graph_down_depth",                      :default => 3
   end
 
   add_index "users", ["confirmation_token"], :name => "index_users_on_confirmation_token", :unique => true

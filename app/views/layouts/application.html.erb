@@ -27,6 +27,7 @@
 	<%=content_tag :div, content_tag(:p, msg), :id=>key%>
 <% end %>
 
+<% if user_signed_in? %>
 <ul class="sf-menu">
 	<li>
 		<a href="#">Menu &darr;</a>
@@ -35,10 +36,12 @@
 			<li><%= link_to 'Edges', edges_path %></li>
 			<li><%= link_to 'Edge types', edge_types_path %></li>
 			<li><%= link_to 'Edit user registration', edit_user_registration_path %></li>
-			
+			<li><%= link_to 'Edit user pref', edit_user_pref_path(current_user.user_pref) %></li>
+	
 		</ul>
 	</li>
 </ul>
+<% end %>
 
 <div id="clearboth"></div>
 

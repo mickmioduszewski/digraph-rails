@@ -1,6 +1,6 @@
 <% @nodes_array = [@node]; @edges_array = [] %>
 
-<% @node_size_array = [current_user.graph_root_node_size]; @node_size = current_user.graph_root_node_size; @edge_size_array = []; @edge_size = current_user.graph_root_edge_size; @size_reduction = current_user.graph_size_reduction; @up_reach = current_user.graph_up_depth; @down_reach = current_user.graph_down_depth %> 
+<% @node_size_array = [current_user.user_pref.graph_root_node_size]; @node_size = current_user.user_pref.graph_root_node_size; @edge_size_array = []; @edge_size = current_user.user_pref.graph_root_edge_size; @size_reduction = current_user.user_pref.graph_size_reduction; @up_reach = current_user.user_pref.graph_up_depth; @down_reach = current_user.user_pref.graph_down_depth %> 
 
 <% @i = 0 %>
 <%= render :partial => "nodes/collect_node_up", :object => @node %>

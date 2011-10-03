@@ -15,29 +15,6 @@
   <p><%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
   <%= f.password_field :current_password %></p>
 
-  <p><%= f.label :user_name %><br />
-  <%= f.text_field :user_name %></p>
-
-  <p><%= f.label :comment %><br />
-  <%= f.text_field :comment %></p>
-
-  <p><%= f.label :graph_direction %><br />
-	<%= f.select :graph_direction, options_for_select(User::GRAPH_ORIENTATION, resource.graph_direction)%></p>
-
-  <p><%= f.label :graph_root_node_size %><br />
-  <%= f.text_field :graph_root_node_size %></p>
-
-  <p><%= f.label :graph_root_edge_size %><br />
-  <%= f.text_field :graph_root_edge_size %></p>
-
-  <p><%= f.label :graph_size_reduction %><br />
-	<%= f.select :graph_size_reduction, options_for_select(User::GRAPH_SIZE_REDUCTION, resource.graph_size_reduction)%></p>
-
-  <p><%= f.label :graph_up_depth %><br />
-	<%= f.select :graph_up_depth, options_for_select(User::GRAPH_REACH, resource.graph_up_depth)%></p>
-
-  <p><%= f.label :graph_down_depth %><br />
-	<%= f.select :graph_down_depth, options_for_select(User::GRAPH_REACH, resource.graph_down_depth)%></p>
 
 
   <p><%= f.submit "Update" %></p>

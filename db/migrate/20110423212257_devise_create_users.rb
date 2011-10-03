@@ -10,14 +10,14 @@ class DeviseCreateUsers < ActiveRecord::Migration
       # t.lockable :lock_strategy => :failed_attempts, :unlock_strategy => :both
       # t.token_authenticatable
       t.timestamps
-      t.string  :user_name, :default => "unknown"
-      t.string  :comment, :default => "none"
-      t.string  :graph_direction, :default => "LR"
-      t.integer :graph_root_node_size, :default => 16
-      t.integer :graph_root_edge_size, :default => 16
-      t.integer :graph_size_reduction, :default => 2
-      t.integer :graph_up_depth, :default => 3
-      t.integer :graph_down_depth, :default => 3
+#      t.string  :user_name, :default => "unknown"
+#      t.string  :comment, :default => "none"
+#      t.string  :graph_direction, :default => "LR"
+#      t.integer :graph_root_node_size, :default => 16
+#      t.integer :graph_root_edge_size, :default => 16
+#      t.integer :graph_size_reduction, :default => 2
+#      t.integer :graph_up_depth, :default => 3
+#      t.integer :graph_down_depth, :default => 3
     end
 
 

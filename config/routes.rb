@@ -1,5 +1,7 @@
 Digraph::Application.routes.draw do
 
+  resources :user_prefs
+
   devise_for :users
 
   resources :edge_types
