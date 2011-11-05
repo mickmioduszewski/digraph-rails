@@ -18,7 +18,7 @@
     <%= f.text_field :comment %></p>
 
     <p><%= f.label :graph_direction %><br />
- 	<%= f.select :graph_direction, options_for_select(UserPref::GRAPH_ORIENTATION)%></p>
+ 	<%= f.select :graph_direction, options_for_select(UserPref::GRAPH_ORIENTATION, @user_pref.graph_direction)%></p>
 
     <p><%= f.label :graph_root_node_size %><br />
     <%= f.text_field :graph_root_node_size %></p>

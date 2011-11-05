@@ -22,7 +22,7 @@ $(function() {
 		$( "#edge_source_name" ).autocomplete({
 			source: function( request, response ) {
 				$.ajax({
-					url: "http://mick.does-it.net/nodes.json",
+					url: "/nodes.json",
 					dataType: "json",
 					data: {						
 						term: request.term
@@ -51,7 +51,7 @@ $(function() {
 		$( "#edge_sink_name" ).autocomplete({
 			source: function( request, response ) {
 				$.ajax({
-					url: "http://mick.does-it.net/nodes.json",
+					url: "/nodes.json",
 					dataType: "json",
 					data: {						
 						term: request.term

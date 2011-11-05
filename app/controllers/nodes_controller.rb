@@ -7,7 +7,9 @@ class NodesController < ApplicationController
   def index
 #    @nodes = Node.all
     @nodes = Node.order('name').search(params[:term]).paginate(:per_page => 10, :page => params[:page])
-
+    @allnodes = Node.all
+    @alledges = Edge.all
+    
     respond_to do |format|
       format.html # index.html.erb
       format.json { render :json => @nodes.to_json }
