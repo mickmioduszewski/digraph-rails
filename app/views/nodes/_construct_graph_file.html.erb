@@ -1,6 +1,6 @@
-<%@filetext = "digraph G {size=\"16,16\", rankdir=\"#{current_user.user_pref.graph_direction}\"\n"%>
-<%@filetext << "edge [color=\"#666666\", arrowhead=\"open\", fontname=\"Trebuchet MS\"] \n"%>
-<%@filetext << "node [shape=plaintext, fontname=\"Trebuchet MS\"]\n"%>
+<%@filetext = "digraph G {size=\"16,16\"; rankdir=\"#{current_user.user_pref.graph_direction}\"\n"%>
+<%@filetext << "edge [color=\"#666666\", arrowhead=\"open\", fontname=\"Trebuchet MS\"]; \n"%>
+<%@filetext << "node [shape=plaintext, fontname=\"Trebuchet MS\"];\n"%>
 
 <%@i=0%>
 <%@nodes_array.each do |node|%>
@@ -8,7 +8,7 @@
   <%if node == @node%>
     <%@filetext << ", style=filled fillcolor=\"#00477f\", fontcolor=\"White\""%>
   <%end%>
-  <%@filetext << "]\n"%>
+  <%@filetext << "];\n"%>
   <%@i+=1%>  
 <%end%>
 
@@ -21,8 +21,8 @@
 	<% end -%>
 	
 	<%@filetext << "n#{edge.source_id} -> n#{edge.sink_id} [URL=\"/edges/#{edge.id}\""%>
-	<% if edgename.empty?; @filetext <<"]\n"%>
-	<% else; 						@filetext <<",  label=\"#{edgename}\", fontsize=\"#{@edge_size_array[@i]}\"]\n"%>
+	<% if edgename.empty?; @filetext <<"];\n"%>
+	<% else; 						@filetext <<",  label=\"#{edgename}\", fontsize=\"#{@edge_size_array[@i]}\"];\n"%>
 	<% end -%>
 	
 	

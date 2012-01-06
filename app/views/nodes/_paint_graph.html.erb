@@ -10,7 +10,7 @@
 
 <p>
 
-<%@xx = `dot -v -Tcmapx -opublic/images/#{current_user.email}.map -Tpng -opublic/images/#{current_user.email}.png public/#{current_user.email}.dot`%> 
+<%@xx = `dot -Tcmapx -opublic/images/#{current_user.email}.map -Tpng -opublic/images/#{current_user.email}.png public/#{current_user.email}.dot`%> 
 <%= image_tag "#{current_user.email}.png", {:usemap => "#G"}  %>
 
 <!--The following line reads an image file and applies it to the HTML to be used by the image-->

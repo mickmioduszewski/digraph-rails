@@ -1,13 +1,13 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.10'
+gem 'rails', '3.1.3'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
-gem "will_paginate", "~> 3.0.pre2"
-gem 'jquery-rails', '>= 1.0.12'
+gem "will_paginate"
+gem 'jquery-rails'
 gem 'devise'
 gem 'tiny_mce'
 
